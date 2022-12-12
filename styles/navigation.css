@@ -1,0 +1,158 @@
+/* НАВИГАЦИЯ */
+div
+{
+    display: block;
+}
+.navig
+{
+    margin: 20px;
+    padding: 20px 30px;
+    /* margin-top: 200px; */
+}
+.alignment
+{
+    display: flex;
+    justify-content:center;
+    margin: 1.5%;
+}
+.alignment > a > img
+{
+    margin:20px;
+    border-radius: 25px;
+}
+img.displayedmenu
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+}
+@media (min-width:1000px)
+{
+    img.displayedmenu
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 400px;
+    }
+    .picture-hover
+    {
+        width: 300px;
+        height: 400px;
+        font-size: 20px;
+    }
+}
+@media(max-width:1000px)
+{
+img.displayedmenu
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 225px;
+        height: 300px;
+    }
+    .picture-hover
+    {
+        width: 225px;
+        height: 300px;
+    }
+}
+@media (max-width: 767px)
+{
+    img.displayedmenu
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 200px;
+    }
+    .picture-hover
+    {
+        width: 150px;
+        height: 200px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px)
+{
+    img.displayedmenu
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 94px;
+        height: 125px;
+    }
+    .picture-hover
+    {
+        width: 94px;
+        height: 125px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px)
+{
+    img.displayedmenu
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 66px;
+    }
+    .picture-hover
+    {
+        width: 50px;
+        height: 66px;
+        font-size: 10px;
+    }
+}
+.picture
+{
+    display: block;
+    flex: 25%;
+    /* overflow: hidden; */
+    position: relative;
+}
+.picture-hover
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* width: 100%;
+    height: 100%; */
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0.1),rgba(248, 248, 248, 0.1),rgba(0, 0, 0, .7),rgba(248, 248, 248, 0.1),rgba(248, 248, 248, 0.1));
+    /* background-color: rgba(0,0,0,.7); */
+    border-radius: 25px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    opacity: 0;
+    transition:  .5s ease;
+    z-index: 2;
+}
+.picture:hover .picture-hover
+{
+    opacity: 1;
+    top:0;
+    transition:  .5s ease;
+}
+.picture:hover img
+{
+    transform: translateY(-20px);
+    transition: .5s ease;
+} 
+.picture img
+{
+    /* max-width: 100%; */
+    height: auto;
+    transition: all .5s ease;
+}

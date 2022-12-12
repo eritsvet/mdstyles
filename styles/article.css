@@ -1,0 +1,127 @@
+article
+{
+    /* margin: 20px 1.5%; */
+    padding: 20px 2.3%; 
+    /* border: 2px solid rgb(12, 22, 155); */
+    /* border-radius: 25px; */
+    /* background-color: rgba(193, 193, 200,0.5); */
+    font-size: 20px;
+    color:rgb(12, 22, 155);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    /* background: url(../img/dancinghiphop.jpg); */
+    background-size: cover;
+}
+article#street
+{
+    background: url(../img/dancinghiphop.jpg);
+}
+article#stage
+{
+    background: url(../img/dancingcontemp.jpg);
+}
+article#lady
+{
+    background: url(../img/dancinglady.jpg);
+}
+section
+{
+    /* margin: 20px 1.5%; */
+    margin: 7%;
+    /*margin-right: 260px;*/
+    padding: 20px;
+    /* border: 2px solid rgb(12, 22, 155); */
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+img.intext1 {
+    float:left;
+    margin-right: 2.3%;
+}
+img.intext2 {
+    float:right;
+    margin-left: 2.3%;
+}
+img.intext{
+    width:99.5%;
+    height: auto;
+}
+section{
+    text-align: justify;
+}
+section a:link
+{
+    color:rgb(255, 255, 255);
+}
+section a:visited
+{
+    color:rgb(222, 223, 227);
+}
+section a:hover
+{
+    color:rgb(127, 129, 151);
+}
+@media (min-width:1000px)
+{
+    img.intext1 {
+        float:left;
+        margin-right: 2rem;
+    }
+    img.intext2 {
+        float:right;
+        margin-left: 2rem;
+    }
+}
+section > h2
+{
+    border: 2px solid rgb(12, 22, 155);
+    border-radius: 25px;
+    background-color: rgb(227, 227, 227); 
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* backdrop-filter: blur(10px); */
+    margin: 0.8%;
+    padding: 5px;
+    text-align:center;
+    font-family:  'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size:25px;
+    position: sticky;
+    top: 62px;
+
+}
+
+@media (max-width: 880px)
+{
+    section, section > h2
+    {
+        font-size: 20px;
+    }
+    img.intext1, img.intext2
+    {
+        width:40%;
+        height: auto;
+    }
+}
+@media (max-width: 600px)
+{
+    section, section > h2
+    {
+        font-size: 15px;
+    }
+    img.intext1, img.intext2
+    {
+        width:99.5%;
+        height: auto;
+    }
+}
+@media (max-width: 400px)
+{
+    section, section > h2
+    {
+        font-size: 10px;
+    }
+}
