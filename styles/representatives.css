@@ -194,11 +194,26 @@ h1.text
     {
         font-size: 30px;
     }
+    .video_name, .video_style
+    {
+        font-size: 20px;
+    }
 }
 @media (max-width: 600px)
 {
     h1.text
     {
         font-size: 25px;
+    }
+    .video_name, .video_style
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px)
+{
+    .video_name, .video_style
+    {
+        font-size: 8px;
     }
 }
